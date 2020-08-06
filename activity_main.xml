@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id= "@+id/nointernet">
+
+
+        <ImageView
+            android:id="@+id/netimg"
+            android:layout_width="146dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="image"
+            android:src="@drawable/nointernet"
+            tools:contentDescription="image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text="No internet connection"
+            android:layout_below="@+id/netimg"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRetry"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:text="retry"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="25dp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#008000"
+        android:onClick="callNow"
+        android:text="CALL NOW"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
